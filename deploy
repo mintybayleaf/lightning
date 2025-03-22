@@ -1,0 +1,1 @@
+CLOJARS_USERNAME="$1" CLOJARS_PASSWORD="$2" clj -T:build deploy

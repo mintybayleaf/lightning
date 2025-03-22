@@ -1,0 +1,12 @@
+{:paths ["src/main" "resources"]
+ :deps {}
+ :aliases {:app {:main-opts ["-m" "clojmath"]}
+           :build {:deps {io.github.clojure/tools.build {:git/tag "v0.10.7", :git/sha "573711ea65f7d324a6a6cdd3ac20cb30bba47e48"}
+                          slipset/deps-deploy {:mvn/version "RELEASE"}}
+                   :ns-default build}
+           :dev {:extra-paths ["src/dev"]
+                 :extra-deps {nrepl/nrepl {:mvn/version "1.0.0"}}
+                 :main-opts ["-m" "nrepl.cmdline" "--middleware" "[cider.nrepl/cider-middleware]"]}
+           :test {:extra-paths ["src/test"]
+                  :extra-deps {lambdaisland/kaocha {:mvn/version "1.88.1376"}}
+                  :main-opts ["-m" "kaocha.runner"]}}}

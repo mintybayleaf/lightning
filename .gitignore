@@ -1,0 +1,8 @@
+# VSCode
+.vscode
+
+# Clojure Tools
+.clj-kondo/
+.cpcache/
+target/
+.lsp
