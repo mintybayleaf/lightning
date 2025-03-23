@@ -5,8 +5,15 @@
                           slipset/deps-deploy {:mvn/version "RELEASE"}}
                    :ns-default build}
            :dev {:extra-paths ["src/dev"]
-                 :extra-deps {nrepl/nrepl {:mvn/version "1.0.0"}}
-                 :main-opts ["-m" "nrepl.cmdline" "--middleware" "[cider.nrepl/cider-middleware]"]}
+                 :extra-deps {org.clojure/tools.nrepl {:mvn/version "0.2.12"}
+                              criterium/criterium {:mvn/version "0.4.6"}}
+                 :ns-default user}
            :test {:extra-paths ["src/test"]
                   :extra-deps {lambdaisland/kaocha {:mvn/version "1.88.1376"}}
-                  :main-opts ["-m" "kaocha.runner"]}}}
+                  :main-opts ["-m" "kaocha.runner"]}
+           :nrepl {:extra-paths ["src/dev"]
+                   :extra-deps {org.clojure/tools.nrepl {:mvn/version "0.2.12"}
+                                nrepl/nrepl {:mvn/version "1.3.1"}
+                                cider/cider-nrepl {:mvn/version "0.53.0"}
+                                refactor-nrepl/refactor-nrepl {:mvn/version "3.10.0"}}
+                   :main-opts ["-m" "nrepl.cmdline" "--interactive" "--color" "--middleware" "[cider.nrepl/cider-middleware,refactor-nrepl.middleware/wrap-refactor]"]}}}

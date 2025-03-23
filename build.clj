@@ -2,7 +2,7 @@
   (:require [clojure.tools.build.api :as build]
             [deps-deploy.deps-deploy :as dd]))
 
-(def lib 'bayleaf/lightning)
+(def lib 'baileykocin.me/lightning)
 (def main 'lightning/core)
 (def version (format "0.1.%s" (build/git-count-revs nil)))
 (def build-directory "target")

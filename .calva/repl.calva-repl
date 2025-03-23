@@ -1,0 +1,511 @@
+; This is the Calva REPL Window.
+; It's just a file, really, with some special treatment from Calva.
+; Use it as a REPL input prompt if you like. (When the REPL is connected.)
+; TIPS: The keyboard shortcut `ctrl+alt+o r` shows and focuses this window
+; Please see https://calva.io/repl-window/ for more info.
+; Happy coding! ♥️
+
+; TIPS: As with any Clojure file when the REPL is connected:
+; - `alt+enter` evaluates the current top level form.
+; - `ctrl+enter` evaluates the current form.
+; Special for this file:
+; - `alt+up` and `alt+down` traverse up and down the REPL command history
+;    when the cursor is after the last contents at the prompt
+;
+; See also the Calva Inspector: https://calva.io/inspector/
+
+This file is configured as the output destination for all REPL output.
+You can configure this with the setting:
+  "calva.outputDestinations"
+
+
+; Connecting ...
+; Hooking up nREPL sessions ...
+; Interrupting Jack-in process.
+; Connecting using "deps.edn" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+;
+
+; Connecting ...
+; Reading port file: file:///home/bayleaf/projects/clojmath/.nrepl-port ...
+; No nrepl port file found.
+; Hooking up nREPL sessions ...
+; Interrupting Jack-in process.
+; Connecting using "Generic" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+;
+
+; Connecting ...
+; Reading port file: file:///home/bayleaf/projects/clojmath/.nrepl-port ...
+; No nrepl port file found.
+; Hooking up nREPL sessions ...
+clj꞉undefined꞉> 
+; Interrupting Jack-in process.
+; Connecting using "deps.edn" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+;
+
+; Connecting ...
+; Reading port file: file:///home/bayleaf/projects/clojmath/.nrepl-port ...
+; No nrepl port file found.
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+(when-let [requires (resolve 'clojure.main/repl-requires)] (clojure.core/apply clojure.core/require @requires))
+clj꞉user꞉> 
+; nREPL Connection was closed
+; Connecting using "deps.edn" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+;
+
+; Connecting ...
+; Reading port file: file:///home/bayleaf/projects/clojmath/.nrepl-port ...
+; No nrepl port file found.
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+(when-let [requires (resolve 'clojure.main/repl-requires)] (clojure.core/apply clojure.core/require @requires))
+; Evaluating file: build.clj
+;
+; ; clj  build
+; CompilerException java.io.FileNotFoundException: Could not locate clojure/tools/build/api__init.class or clojure/tools/build/api.clj on classpath., compiling:(/home/bayleaf/projects/clojmath/build.clj:1:1)
+; Evaluation of file build.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉build꞉> 
+; Evaluating file: core.clj
+nil
+
+clj꞉lightning.core꞉> 
+; Evaluating file: user.clj
+#'user/stop
+
+clj꞉user꞉> 
+; Evaluating file: user.clj
+nil
+
+clj꞉user꞉> 
+; Evaluating file: nrepl.clj
+#'nrepl/stop
+
+clj꞉nrepl꞉> 
+; nREPL Connection was closed
+clj꞉nrepl꞉> 
+; Connecting using "deps.edn" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+;
+
+; Connecting ...
+; Reading port file: file:///home/bayleaf/projects/clojmath/.nrepl-port ...
+; Using host:port localhost:38509 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+(when-let [requires (resolve 'clojure.main/repl-requires)] (clojure.core/apply clojure.core/require @requires))
+; nREPL Connection was closed
+clj꞉user꞉> 
+; Jacking in...
+; Connecting using "deps.edn" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+;
+
+clj꞉user꞉> 
+; Starting Jack-in: (cd /home/bayleaf/projects/clojmath; clojure -Sdeps '{:deps {nrepl/nrepl {:mvn/version,"1.3.1"},cider/cider-nrepl {:mvn/version,"0.52.1"}}}' -M -m nrepl.cmdline --middleware "[cider.nrepl/cider-middleware]")
+; Interrupting Jack-in process.
+; Jacking in...
+; Connecting using "deps.edn" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+;
+
+; Starting Jack-in: (cd /home/bayleaf/projects/clojmath; clojure -Sdeps '{:deps {nrepl/nrepl {:mvn/version,"1.3.1"},cider/cider-nrepl {:mvn/version,"0.52.1"}}}' -M:dev -m nrepl.cmdline --middleware "[cider.nrepl/cider-middleware]")
+clj꞉user꞉> 
+; Jacking in...
+; Connecting using "deps.edn" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+;
+
+; Starting Jack-in: (cd /home/bayleaf/projects/clojmath; clojure -Sdeps '{:deps {nrepl/nrepl {:mvn/version,"1.3.1"},cider/cider-nrepl {:mvn/version,"0.52.1"}}}' -M:dev -m nrepl.cmdline --middleware "[cider.nrepl/cider-middleware]")
+clj꞉user꞉> 
+; Jacking in...
+; Connecting using "deps.edn" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+;
+
+; Starting Jack-in: (cd /home/bayleaf/projects/clojmath; clojure -Sdeps '{:deps {nrepl/nrepl {:mvn/version,"1.3.1"},cider/cider-nrepl {:mvn/version,"0.52.1"}}}' -M:dev -m nrepl.cmdline --middleware "[cider.nrepl/cider-middleware]")
+; Using host:port localhost:37069 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+(when-let [requires (resolve 'clojure.main/repl-requires)] (clojure.core/apply clojure.core/require @requires))
+nil
+clj꞉user꞉> 
+"Please see https://calva.io/output/#about-stdout-in-the-repl-window
+about why stdout printed to this file is prepended with `;` to be line comments."
+clj꞉user꞉> 
+; Jack-in done.
+clj꞉user꞉> 
+; nREPL Connection was closed
+clj꞉undefined꞉> 
+; Connecting using "deps.edn" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+;
+
+; Connecting ...
+; Reading port file: file:///home/bayleaf/projects/lightning/.nrepl-port ...
+; No nrepl port file found.
+; Jacking in...
+; Connecting using "deps.edn" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+;
+
+; Starting Jack-in: (cd /home/bayleaf/projects/lightning; clojure -Sdeps '{:deps {nrepl/nrepl {:mvn/version,"1.3.1"},cider/cider-nrepl {:mvn/version,"0.52.1"}}}' -M:dev -m nrepl.cmdline --middleware "[cider.nrepl/cider-middleware]")
+; Using host:port localhost:36607 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+(when-let [requires (resolve 'clojure.main/repl-requires)] (clojure.core/apply clojure.core/require @requires))
+nil
+clj꞉user꞉> 
+"Please see https://calva.io/output/#about-stdout-in-the-repl-window
+about why stdout printed to this file is prepended with `;` to be line comments."
+clj꞉user꞉> 
+; Jack-in done.
+clj꞉user꞉> 
+; Evaluating file: arithmetic.clj
+;
+; ; clj  lightning.arithmetic
+; Syntax error macroexpanding def-unsafe-binary-operation at (src/main/lightning/arithmetic.clj:9:1).
+; Attempting to call unbound fn: #'clojure.core/unquote
+; Evaluation of file arithmetic.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+;
+; Syntax error macroexpanding def-unsafe-binary-operation at (src/main/lightning/arithmetic.clj:9:1).
+; Attempting to call unbound fn: #'clojure.core/unquote
+; Evaluation of file arithmetic.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+;
+; Syntax error macroexpanding def-unsafe-binary-operation at (src/main/lightning/arithmetic.clj:9:1).
+; Attempting to call unbound fn: #'clojure.core/unquote
+; Evaluation of file arithmetic.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉lightning.arithmetic꞉> 
+(create-symbol "value"); Evaluating file: arithmetic.clj
+;
+; Syntax error macroexpanding def-unsafe-binary-operation at (src/main/lightning/arithmetic.clj:9:1).
+; Attempting to call unbound fn: #'clojure.core/unquote
+; Evaluation of file arithmetic.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉lightning.arithmetic꞉> 
+(create-symbol "value")
+; Syntax error compiling at (.calva/repl.calva-repl:208:1).
+; Unable to resolve symbol: create-symbol in this context
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+#'lightning.arithmetic/create-symbol
+clj꞉lightning.arithmetic꞉> 
+(create-symbol "value")
+#'lightning.arithmetic/n
+clj꞉lightning.arithmetic꞉> 
+n
+2
+clj꞉lightning.arithmetic꞉> 
+(create-symbol "value")
+; Syntax error compiling def at (.calva/repl.calva-repl:221:1).
+; First argument to def must be a Symbol
+clj꞉lightning.arithmetic꞉> 
+; Syntax error compiling def at (.calva/repl.calva-repl:221:1).
+; First argument to def must be a Symbol
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+#'lightning.arithmetic/create-symbol
+clj꞉lightning.arithmetic꞉> 
+(create-symbol "value")
+; Syntax error compiling def at (.calva/repl.calva-repl:231:1).
+; First argument to def must be a Symbol
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+#'lightning.arithmetic/create-symbol
+clj꞉lightning.arithmetic꞉> 
+(create-symbol "value")
+; Syntax error compiling def at (.calva/repl.calva-repl:238:1).
+; First argument to def must be a Symbol
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+#'lightning.arithmetic/create-symbol
+clj꞉lightning.arithmetic꞉> 
+(create-symbol "value")
+; Syntax error macroexpanding create-symbol at (.calva/repl.calva-repl:245:1).
+; Attempting to call unbound fn: #'clojure.core/unquote
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+#'lightning.arithmetic/create-symbol
+clj꞉lightning.arithmetic꞉> 
+(create-symbol "value")
+(create-symbol "value")
+#'lightning.arithmetic/value
+clj꞉lightning.arithmetic꞉> 
+value
+2
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+#'lightning.arithmetic/create-symbol
+clj꞉lightning.arithmetic꞉> 
+(def-unsafe-binary-operation int "add")
+; Syntax error macroexpanding def-unsafe-binary-operation at (.calva/repl.calva-repl:262:1).
+; Attempting to call unbound fn: #'clojure.core/unquote
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+#'lightning.arithmetic/create-symbol
+clj꞉lightning.arithmetic꞉> 
+(def-unsafe-binary-operation int "add")
+; Syntax error macroexpanding def-unsafe-binary-operation at (.calva/repl.calva-repl:269:1).
+; Attempting to call unbound fn: #'clojure.core/unquote
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+#'lightning.arithmetic/create-symbol
+clj꞉lightning.arithmetic꞉> 
+(def-unsafe-binary-operation int "add")
+; Syntax error macroexpanding def-unsafe-binary-operation at (.calva/repl.calva-repl:276:1).
+; Attempting to call unbound fn: #'clojure.core/unquote
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+#'lightning.arithmetic/create-symbol
+clj꞉lightning.arithmetic꞉> 
+(def-unsafe-binary-operation int "add")
+; Syntax error macroexpanding def-unsafe-binary-operation at (.calva/repl.calva-repl:283:1).
+; Attempting to call unbound fn: #'clojure.core/unquote
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+#'lightning.arithmetic/create-symbol
+clj꞉lightning.arithmetic꞉> 
+(def-unsafe-binary-operation int "add")
+; Syntax error macroexpanding def-unsafe-binary-operation at (.calva/repl.calva-repl:290:1).
+; Attempting to call unbound fn: #'clojure.core/unquote
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+#'lightning.arithmetic/create-symbol
+clj꞉lightning.arithmetic꞉> 
+(def-unsafe-binary-operation int "add")
+; Syntax error macroexpanding def-unsafe-binary-operation at (.calva/repl.calva-repl:297:1).
+; Attempting to call unbound fn: #'clojure.core/unquote
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+#'lightning.arithmetic/create-symbol
+clj꞉lightning.arithmetic꞉> 
+(def-unsafe-binary-operation int "add")
+; Syntax error (IllegalArgumentException) compiling fn* at (.calva/repl.calva-repl:304:1).
+; Only long and double primitives are supported
+clj꞉lightning.arithmetic꞉> 
+(def-unsafe-binary-operation long "add")
+#'lightning.arithmetic/add-long
+clj꞉lightning.arithmetic꞉> 
+(add-long 1 2)
+; Execution error (AbstractMethodError) at lightning.arithmetic/eval12301 (REPL:311).
+; Receiver class lightning.arithmetic$add_long does not define or inherit an implementation of the resolved method 'abstract java.lang.Object invokePrim(long, long)' of interface clojure.lang.IFn$LLO.
+clj꞉lightning.arithmetic꞉> 
+(unchecked-add 1 2)
+3
+clj꞉lightning.arithmetic꞉> 
+(def-unsafe-binary-operation Long "add")
+#'lightning.arithmetic/add-Long
+clj꞉lightning.arithmetic꞉> 
+(unchecked-add 1 2)
+3
+clj꞉lightning.arithmetic꞉> 
+(add-long 1 2)
+; Execution error (AbstractMethodError) at lightning.arithmetic/eval12308 (REPL:324).
+; Receiver class lightning.arithmetic$add_long does not define or inherit an implementation of the resolved method 'abstract java.lang.Object invokePrim(long, long)' of interface clojure.lang.IFn$LLO.
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+#'lightning.arithmetic/def-unsafe-binary-operation
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+#'lightning.arithmetic/add-long
+clj꞉lightning.arithmetic꞉> 
+(add-long 1 2)
+; Execution error (AbstractMethodError) at lightning.arithmetic/eval12347 (REPL:334).
+; Receiver class lightning.arithmetic$add_long does not define or inherit an implementation of the resolved method 'abstract java.lang.Object invokePrim(long, long)' of interface clojure.lang.IFn$LLO.
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+#'lightning.arithmetic/add-long
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+#'lightning.arithmetic/add-long
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+#'lightning.arithmetic/add-long
+clj꞉lightning.arithmetic꞉> 
+(add-long 1 2)
+; Execution error (AbstractMethodError) at lightning.arithmetic/eval12406 (REPL:347).
+; Receiver class lightning.arithmetic$add_long does not define or inherit an implementation of the resolved method 'abstract java.lang.Object invokePrim(long, long)' of interface clojure.lang.IFn$LLO.
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+;
+; Syntax error (IllegalArgumentException) compiling fn* at (src/main/lightning/arithmetic.clj:33:1).
+; Only long and double primitives are supported
+; Evaluation of file arithmetic.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+;
+; Syntax error (IllegalArgumentException) compiling fn* at (src/main/lightning/arithmetic.clj:33:1).
+; Only long and double primitives are supported
+; Evaluation of file arithmetic.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉lightning.arithmetic꞉> 
+; nREPL Connection was closed
+; Jacking in...
+; Connecting using "deps.edn" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+;
+
+; Starting Jack-in: (cd /home/bayleaf/projects/lightning; clojure -Sdeps '{:deps {nrepl/nrepl {:mvn/version,"1.3.1"},cider/cider-nrepl {:mvn/version,"0.52.1"}}}' -M:dev -m nrepl.cmdline --middleware "[cider.nrepl/cider-middleware]")
+; Using host:port localhost:35461 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+(when-let [requires (resolve 'clojure.main/repl-requires)] (clojure.core/apply clojure.core/require @requires))
+nil
+clj꞉user꞉> 
+; Jack-in done.
+clj꞉user꞉> 
+; Evaluating file: arithmetic.clj
+;
+; ; clj  lightning.arithmetic
+; Syntax error (IllegalArgumentException) compiling fn* at (src/main/lightning/arithmetic.clj:33:1).
+; Only long and double primitives are supported
+; Evaluation of file arithmetic.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+;
+; Syntax error (IllegalArgumentException) compiling fn* at (src/main/lightning/arithmetic.clj:33:1).
+; Only long and double primitives are supported
+; Evaluation of file arithmetic.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+;
+; Syntax error (IllegalArgumentException) compiling fn* at (src/main/lightning/arithmetic.clj:33:1).
+; Only long and double primitives are supported
+; Evaluation of file arithmetic.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+true
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+#'lightning.arithmetic/addl
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+#'lightning.arithmetic/subtractl
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+;
+; Syntax error (ArityException) compiling unchecked-add at (src/main/lightning/arithmetic.clj:9:3).
+; Wrong number of args (1) passed to: clojure.core/unchecked-add--inliner--5664
+; Evaluation of file arithmetic.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+;
+; Syntax error (IllegalArgumentException) compiling fn* at (src/main/lightning/arithmetic.clj:33:1).
+; Only long and double primitives are supported
+; Evaluation of file arithmetic.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+#'lightning.arithmetic/multiplyl
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+;
+; Syntax error reading source at (src/main/lightning/arithmetic.clj:56:1).
+; EOF while reading
+; Evaluation of file arithmetic.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+#'lightning.arithmetic/dividel
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+#'lightning.arithmetic/incl
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+#'lightning.arithmetic/decl
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+;
+; Syntax error (IllegalArgumentException) compiling fn* at (src/main/lightning/arithmetic.clj:33:1).
+; Only long and double primitives are supported
+; Evaluation of file arithmetic.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+;
+; Syntax error (IllegalArgumentException) compiling fn* at (src/main/lightning/arithmetic.clj:33:1).
+; Only long and double primitives are supported
+; Evaluation of file arithmetic.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+#'lightning.arithmetic/decl
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+;
+; Syntax error (IllegalArgumentException) compiling fn* at (src/main/lightning/arithmetic.clj:33:1).
+; Only long and double primitives are supported
+; Evaluation of file arithmetic.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+;
+; Syntax error (IllegalArgumentException) compiling fn* at (src/main/lightning/arithmetic.clj:33:1).
+; Only long and double primitives are supported
+; Evaluation of file arithmetic.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+;
+; Syntax error (IllegalArgumentException) compiling fn* at (src/main/lightning/arithmetic.clj:37:1).
+; Only long and double primitives are supported
+; Evaluation of file arithmetic.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+;
+; Syntax error (IllegalArgumentException) compiling fn* at (src/main/lightning/arithmetic.clj:45:1).
+; Only long and double primitives are supported
+; Evaluation of file arithmetic.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+;
+; Syntax error (IllegalArgumentException) compiling fn* at (src/main/lightning/arithmetic.clj:53:1).
+; Only long and double primitives are supported
+; Evaluation of file arithmetic.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+#'lightning.arithmetic/deci
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+;
+; Syntax error (IllegalArgumentException) compiling fn* at (src/main/lightning/arithmetic.clj:37:1).
+; Only long and double primitives are supported
+; Evaluation of file arithmetic.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+#'lightning.arithmetic/deci
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+#'lightning.arithmetic/deci
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+#'lightning.arithmetic/deci
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+#'lightning.arithmetic/decf64
+clj꞉lightning.arithmetic꞉> (incf64 32.0)
+33.0
+clj꞉lightning.arithmetic꞉> 
+(incf64 32)
+33.0
+clj꞉lightning.arithmetic꞉> 
+; Evaluating file: arithmetic.clj
+#'lightning.arithmetic/decf64
+clj꞉lightning.arithmetic꞉> 
